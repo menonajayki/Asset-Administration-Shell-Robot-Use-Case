@@ -1,22 +1,7 @@
-# The goal of the program is to  create an Asset Administration Shell usinh Python BASYX Framework
-#!/usr/bin/env python3
-# This work is licensed under a Creative Commons CCZero 1.0 Universal License.
-# See http://creativecommons.org/publicdomain/zero/1.0/ for more information.
-"""
-Tutorial for the creation of a simple Asset Administration Shell, containing an AssetInformation object and a Submodel
-reference
-"""
 import tkinter as tk
 from prettytable import PrettyTable
-# Import all Eclipse BaSyx Python SDK classes from model package
 from basyx.aas import model
 
-# In this tutorial, you'll get a step-by-step guide on how to create an Asset Administration Shell (AAS) and all
-# required objects within. First, you need an AssetInformation object for which you want to create an AAS. After that,
-# an Asset Administration Shell can be created. Then, it's possible to add Submodels to the AAS. The Submodels can
-# contain SubmodelElements.
-#
-# Step-by-Step Guide:
 # Step 1: create a simple Asset Administration Shell, containing AssetInformation object
 # Step 2: create a simple Submodel
 # Step 3: create a simple Property and add it to the Submodel
@@ -25,6 +10,7 @@ from basyx.aas import model
 ############################################################################################
 # Step 1: Create a Simple Asset Administration Shell Containing an AssetInformation object #
 ############################################################################################
+
 # Step 1.1: create the AssetInformation object
 asset_information = model.AssetInformation(
     asset_kind=model.AssetKind.INSTANCE,
@@ -38,9 +24,8 @@ aas = model.AssetAdministrationShell(
     asset_information=asset_information
 )
 
-
 #############################################################
-# Step 2: Create a Simple Submodel Without SubmodelElements #
+# Step 2: Create a Simple Submodel Without SubmodelElements
 #############################################################
 
 # Step 2.1: create the Submodel object
@@ -53,9 +38,6 @@ submodel = model.Submodel(
 aas.submodel.add(model.ModelReference.from_referable(submodel))
 
 
-# ===============================================================
-# ALTERNATIVE: step 1 and 2 can alternatively be done in one step
-# In this version, the Submodel reference is passed to the Asset Administration Shell's constructor.
 submodel = model.Submodel(
     id_='https://acplt.org/Simple_Submodel'
 )
@@ -90,10 +72,6 @@ property_ = model.Property(
 # Step 3.3: add the Property to the Submodel
 submodel.submodel_element.add(property_)
 
-
-# =====================================================================
-# ALTERNATIVE: step 2 and 3 can also be combined in a single statement:
-# Again, we pass the Property to the Submodel's constructor instead of adding it afterward.
 submodel = model.Submodel(
     id_='https://acplt.org/Simple_Submodel',
     submodel_element={
@@ -110,7 +88,6 @@ submodel = model.Submodel(
         )
     }
 )
-
 
 
 # Create a simple Asset Administration Shell

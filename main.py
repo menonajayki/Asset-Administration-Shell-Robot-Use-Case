@@ -173,25 +173,42 @@ def create_aas():
 
     return aas
 
-def display_aas_table():
+def display_aas_ui():
     aas = create_aas()
 
-    # Create AAS table
-    aas_table = PrettyTable(["AAS ID", "Asset Kind", "Global Asset ID"])
-    aas_table.add_row([aas.id, aas.asset_information.asset_kind, aas.asset_information.global_asset_id])
-
-    # Display AAS table in a new window
+    # Create main window
     window = tk.Tk()
     window.title("AAS Viewer")
 
-    aas_label = tk.Label(window, text="Asset Administration Shell:")
-    aas_label.pack()
+    # AAS ID
+    aas_id_label = tk.Label(window, text="AAS ID:")
+    aas_id_label.grid(row=0, column=0, padx=5, pady=5)
 
-    aas_text = tk.Text(window, height=100, width=100)
-    aas_text.insert(tk.END, str(aas_table))
-    aas_text.pack()
+    aas_id_entry = tk.Entry(window, width=50)
+    aas_id_entry.insert(0, aas.id)
+    aas_id_entry.config(state='readonly')
+    aas_id_entry.grid(row=0, column=1, padx=5, pady=5)
 
+    # Asset Kind
+    asset_kind_label = tk.Label(window, text="Asset Kind:")
+    asset_kind_label.grid(row=1, column=0, padx=5, pady=5)
+
+    asset_kind_entry = tk.Entry(window, width=50)
+    asset_kind_entry.insert(0, aas.asset_information.asset_kind)
+    asset_kind_entry.config(state='readonly')
+    asset_kind_entry.grid(row=1, column=1, padx=5, pady=5)
+
+    # Global Asset ID
+    global_asset_id_label = tk.Label(window, text="Global Asset ID:")
+    global_asset_id_label.grid(row=2, column=0, padx=5, pady=5)
+
+    global_asset_id_entry = tk.Entry(window, width=50)
+    global_asset_id_entry.insert(0, aas.asset_information.global_asset_id)
+    global_asset_id_entry.config(state='readonly')
+    global_asset_id_entry.grid(row=2, column=1, padx=5, pady=5)
+
+    # Run the Tkinter event loop
     window.mainloop()
 
-# Call the function to display the AAS table
-display_aas_table()
+# Call the function to display the AAS UI
+display_aas_ui()

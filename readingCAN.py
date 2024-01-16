@@ -8,16 +8,17 @@ class CANReader:
     def __init__(self, root):
         self.root = root
         self.root.title("CAN Data Reader")
+        self.root.geometry("600x400")  # Set the initial size of the window
 
         self.start_button = ttk.Button(root, text="Start Reading", command=self.start_reading)
-        self.start_button.pack(pady=10)
+        self.start_button.pack(pady=20)
 
         self.stop_button = ttk.Button(root, text="Stop Reading", command=self.stop_reading)
-        self.stop_button.pack(pady=10)
+        self.stop_button.pack(pady=20)
         self.stop_button['state'] = 'disabled'  # Initially, stop button is disabled
 
-        self.text_output = tk.Text(root, height=10, width=50)
-        self.text_output.pack(pady=10)
+        self.text_output = tk.Text(root, height=15, width=70)  # Adjust height and width
+        self.text_output.pack(pady=20)
 
         self.running = False
         self.bus = None

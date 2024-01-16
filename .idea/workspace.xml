@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90fe4086-2527-48a6-9753-98493b28130d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Asset-Administration-Shell-Pilz-Robot-Use-Case" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Asset-Administration-Shell-Pilz-Robot-Use-Case/readingCAN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readingCAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/readingCAN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Asset-Administration-Shell-Pilz-Robot-Use-Case" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -51,10 +50,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "settings.qodana"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ajay\PycharmProjects\pythonAssetAdministrationShells" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonAssetAdministrationShells" />
@@ -119,7 +123,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705332012128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Second Update">
+      <option name="closed" value="true" />
+      <created>1705403051038</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705403051038</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Second Update">
+      <option name="closed" value="true" />
+      <created>1705403151607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705403151607</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

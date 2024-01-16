@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90fe4086-2527-48a6-9753-98493b28130d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/aasCreation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readingCAN.py" beforeDir="false" afterPath="$PROJECT_DIR$/readingCAN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.aasCreation.executor": "Run",
     "Python.main.executor": "Run",
     "Python.readingCAN.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -139,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705403151607</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Second Update">
+      <option name="closed" value="true" />
+      <created>1705405277813</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705405277813</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

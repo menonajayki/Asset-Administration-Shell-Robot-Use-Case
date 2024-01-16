@@ -7,5 +7,4 @@ from readingCAN import CANReader
 #root = tk.Tk()
 #app = CANReader(root)
 
-# Start the Tkinter event loop
 #root.mainloop()

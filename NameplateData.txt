@@ -1,0 +1,1 @@
+Machine: Robot Optical Inspection Machine, Machine Number: RCCESOI1001, Year: 2020, Drawing Number: RCCESOI1001 - ED, Voltage or Frequency: 230VAC (P+N+PE) 50-60 Hz, Current: 16A, Switching Capacity: 10kA
